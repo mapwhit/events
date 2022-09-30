@@ -21,6 +21,15 @@ test('Evented', async t => {
     t.assert.ok(!evented.listens('a'));
   });
 
+  await t.test('returns a promise when no listener is provided to "once" method', async t => {
+    const evented = new Evented();
+    const promise = evented.once('a');
+    evented.fire(new Event('a'));
+    evented.fire(new Event('a'));
+    await promise;
+    t.assert.ok(!evented.listens('a'));
+  });
+
   await t.test('passes data to listeners', t => {
     const evented = new Evented();
     evented.on('a', data => {
