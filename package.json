@@ -1,0 +1,33 @@
+{
+  "name": "@mapwhit/events",
+  "version": "0.0.0",
+  "description": "Event dispatcher used by @mapwhit modules.",
+  "author": {
+    "name": "Damian Krzeminski",
+    "email": "pirxpilot@furkot.com",
+    "url": "https://pirxpilot.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapwhit/events.git"
+  },
+  "type": "module",
+  "exports": "./lib/events.js",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "events",
+    "map",
+    "events"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@biomejs/biome": "2.0.5"
+  },
+  "scripts": {
+    "test": "make check"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ]
+}
