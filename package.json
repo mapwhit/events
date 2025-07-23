@@ -1,6 +1,6 @@
 {
   "name": "@mapwhit/events",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Event dispatcher used by @mapwhit modules.",
   "author": {
     "name": "Damian Krzeminski",
